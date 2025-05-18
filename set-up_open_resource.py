@@ -19,7 +19,7 @@ p4.pipea.SwitchIngress_a.maxpooling_tbl.clear()
 p4.pipea.SwitchIngress_a.compare_ret_tbl.clear()
 p4.pipea.SwitchIngress_a.bias_tbl.clear()
 
-# 你应该在?处填充你的模型权重和偏置
+# You should fill in your model’s weights and biases at the ‘?’ position
 # p4.pipea.SwitchIngress_a.weight_tbl.add_with_weight_act(level = ?, channel_index = ?, w1 = ? , w2 = ? , w3 = ?, w4 = ?)
 # p4.pipea.SwitchIngress_a.bias_tbl.add_with_bias_act(level = ?, channel_index = ?, w1 = ?)
 
@@ -147,8 +147,7 @@ for i in range(1,len(result)):
     for j in range(result[i-1]+1, result[i]+1):
         j_d = j 
         if(j < 0):
-            j_d = j + 65536        
-        #print("ovar1="+str(j)+"wquan"+str(i-1))
+            j_d = j + 65536
         p4.pipea.SwitchIngress_a.quanti_tbl.add_with_quanti_act(o_var1 = j_d,level = 1, w_quan=(i - 128))  
         p4.pipea.SwitchIngress_a.quanti_tbl_2.add_with_quanti_act_2(o_var2 = j_d,level = 1, w_quan=(i - 128))  
         
@@ -192,7 +191,7 @@ def multiply_and_clip_with_constant_with_bias(M, bias):
     result.append(32767) 
     return result 
 
-# 调用函数并处理结果  
+#   
 result1 = multiply_and_clip_with_constant_with_bias(M_4, bias_41)  
 result2 = multiply_and_clip_with_constant_with_bias(M_4, bias_42)  
 result3 = multiply_and_clip_with_constant_with_bias(M_4, bias_43)  
