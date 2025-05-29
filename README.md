@@ -42,7 +42,8 @@ The previous work, **IN3**, is the first step of model compression in PISA, envi
 ```bibtex
 @INPROCEEDINGS{10621341,
   author={Zhang, Mai and Cui, Lin and Zhang, Xiaoquan and Tso, Fung Po and Zhang, Zhen and Deng, Yuhui and Li, Zhetao},
-  title={Quark: Implementing Convolutional Neural Networks Entirely on Programmable Data Plane}, 
+  title={Quark: Implementing Convolutional Neural Networks Entirely on Programmable Data Plane},
+  booktitle={IEEE Conference on Computer Communications (IEEE INFOCOM)},
   year={2025},
   volume={},
   number={}
