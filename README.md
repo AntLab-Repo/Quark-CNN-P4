@@ -40,13 +40,13 @@ The previous work, **IN3**, is the first step of model compression in PISA, envi
 
 * Zhang M., Cui L. (Corresponding author), Zhang X., Tso F. P., Zhang Z., Deng Y. and Li Z., “Quark: Implementing Convolutional Neural Networks Entirely on Programmable Data Plane”, in IEEE Conference on Computer Communications (IEEE INFOCOM), 2025.
 ```bibtex
-@INPROCEEDINGS{10621341,
-  author={Zhang, Mai and Cui, Lin and Zhang, Xiaoquan and Tso, Fung Po and Zhang, Zhen and Deng, Yuhui and Li, Zhetao},
+@inproceedings{zhang2025quark,
   title={Quark: Implementing Convolutional Neural Networks Entirely on Programmable Data Plane},
-  booktitle={IEEE Conference on Computer Communications (IEEE INFOCOM)},
+  author={Zhang, Mai and Cui, Lin and Zhang, Xiaoquan and Tso, Fung Po and Zhen, Zhang and Deng, Yuhui and Li, Zhetao},
+  booktitle={IEEE INFOCOM 2025-IEEE Conference on Computer Communications},
+  pages={1--10},
   year={2025},
-  volume={},
-  number={}
+  organization={IEEE}
 }
 ```
 
